@@ -9,7 +9,7 @@ import {
   Flag, 
   Users, 
   Mic,
-  CloudUpload,
+  UploadCloud,
   VolumeX
 } from 'lucide-react';
 
