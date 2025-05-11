@@ -59,7 +59,7 @@ export const Tools = () => {
       id: 'voice',
       name: 'Voice Message Analyzer',
       description: 'Upload audio to detect tone and manipulation',
-      icon: <Microphone size={24} className="text-yellow-400" />,
+      icon: <Mic size={24} className="text-yellow-400" />,
       isAvailable: false,
       path: '/tools/voice'
     },
@@ -67,7 +67,7 @@ export const Tools = () => {
       id: 'importer',
       name: 'Drama History Importer',
       description: 'Import chat logs to find behavioral patterns',
-      icon: <CloudUpload size={24} className="text-blue-400" />,
+      icon: <UploadCloud size={24} className="text-blue-400" />,
       isAvailable: false,
       path: '/tools/importer'
     },
