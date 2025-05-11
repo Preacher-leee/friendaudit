@@ -8,7 +8,7 @@ import {
   Book, 
   Flag, 
   Users, 
-  Microphone,
+  Mic,
   CloudUpload,
   VolumeX
 } from 'lucide-react';
