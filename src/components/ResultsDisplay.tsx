@@ -185,7 +185,7 @@ export const ResultsDisplay = () => {
         <Button variant="outline" onClick={resetAudit}>
           Start New Audit
         </Button>
-        <Button as={Link} to="/tools/text-analyzer">
+        <Button as={Link} to="/components/TextAnalyzer>
           Analyze Text Messages
         </Button>
       </div>
