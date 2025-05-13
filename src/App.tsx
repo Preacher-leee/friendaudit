@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
-import { Audit } from './pages/Audit';
-import { Tools } from './pages/Tools';
-import { TextAnalyzer } from './pages/TextAnalyzer';
-import { Compare } from './pages/Compare';
+import { Audit } from './pages/audit';
+import { Tools } from './pages/tools';
+import { TextAnalyzer } from './pages/text-analyzer';
+import { Compare } from './pages/compare';
 
 function App() {
   useEffect(() => {
