@@ -21,7 +21,7 @@ export const Tools = () => {
       description: 'Paste in a message to analyze emotional tone and detect manipulation',
       icon: <MessageCircle size={24} className="text-cyan-400" />,
       isAvailable: true,
-      path: '/Tools/TextAnalyzer'
+      path: '../components/TextAnalyzer'
     },
     {
       id: 'Compare',
@@ -29,7 +29,7 @@ export const Tools = () => {
       description: 'Side-by-side comparison of two friendships',
       icon: <BarChart2 size={24} className="text-purple-400" />,
       isAvailable: true,
-      path: '/Tools/Compare'
+      path: '../components/Compare'
     },
     {
       id: 'Journal',
