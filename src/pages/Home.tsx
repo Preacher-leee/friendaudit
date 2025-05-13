@@ -35,8 +35,8 @@ export const Home = () => {
             <Button size="lg" as={Link} to="./Audit">
               Start the Audit
             </Button>
-            <Button variant="outline" size="lg" as={Link} to="./Tools">
-              Explore Tools
+            <Button variant="outline" size="lg" as={Link} to="./tools">
+              Explore tools
             </Button>
           </div>
         </div>
@@ -66,7 +66,7 @@ export const Home = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-cyan-300">
-              Tools to Audit Your Circle
+              tools to Audit Your Circle
             </span>
           </h2>
           
