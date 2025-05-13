@@ -44,10 +44,10 @@ export const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          <NavLink to="/audit">Start Audit</NavLink>
-          <NavLink to="/tools">Tools</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <Button size="sm" as={Link} to="/audit">
+          <NavLink to="/Audit">Start Audit</NavLink>
+          <NavLink to="/Tools">Tools</NavLink>
+          <NavLink to="/About">About</NavLink>
+          <Button size="sm" as={Link} to="/Audit">
             Run a New Audit
           </Button>
         </nav>
@@ -66,13 +66,13 @@ export const Header = () => {
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-black/95 md:hidden pt-20 px-6 flex flex-col">
           <nav className="flex flex-col gap-4 items-center">
-            <MobileNavLink to="/audit" onClick={() => setIsMobileMenuOpen(false)}>
+            <MobileNavLink to="/Audit" onClick={() => setIsMobileMenuOpen(false)}>
               Start Audit
             </MobileNavLink>
-            <MobileNavLink to="/tools" onClick={() => setIsMobileMenuOpen(false)}>
+            <MobileNavLink to="/Tools" onClick={() => setIsMobileMenuOpen(false)}>
               Tools
             </MobileNavLink>
-            <MobileNavLink to="/about" onClick={() => setIsMobileMenuOpen(false)}>
+            <MobileNavLink to="/About" onClick={() => setIsMobileMenuOpen(false)}>
               About
             </MobileNavLink>
             <div className="pt-4">
@@ -80,7 +80,7 @@ export const Header = () => {
                 size="md" 
                 fullWidth 
                 as={Link} 
-                to="/audit" 
+                to="/Audit" 
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Run a New Audit
