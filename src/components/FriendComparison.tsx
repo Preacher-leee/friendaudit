@@ -265,3 +265,5 @@ export const FriendComparison = () => {
     </div>
   );
 };
+
+header
