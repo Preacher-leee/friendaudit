@@ -36,17 +36,17 @@ export const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/audit" className="text-gray-400 hover:text-purple-300 text-sm">
+                  <Link to="/Audit" className="text-gray-400 hover:text-purple-300 text-sm">
                     Start Audit
                   </Link>
                 </li>
                 <li>
-                  <Link to="/tools" className="text-gray-400 hover:text-purple-300 text-sm">
+                  <Link to="/Tools" className="text-gray-400 hover:text-purple-300 text-sm">
                     Tools
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="text-gray-400 hover:text-purple-300 text-sm">
+                  <Link to="/About" className="text-gray-400 hover:text-purple-300 text-sm">
                     About
                   </Link>
                 </li>
@@ -57,17 +57,17 @@ export const Footer = () => {
               <h3 className="font-bold text-white mb-4">Tools</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/tools/message-analyzer" className="text-gray-400 hover:text-purple-300 text-sm">
+                  <Link to="/TextAnalyzer" className="text-gray-400 hover:text-purple-300 text-sm">
                     Text Analyzer
                   </Link>
                 </li>
                 <li>
-                  <Link to="/tools/compare" className="text-gray-400 hover:text-purple-300 text-sm">
+                  <Link to="/Compare" className="text-gray-400 hover:text-purple-300 text-sm">
                     Compare Friends
                   </Link>
                 </li>
                 <li>
-                  <Link to="/tools/journal" className="text-gray-400 hover:text-purple-300 text-sm">
+                  <Link to="/Journal" className="text-gray-400 hover:text-purple-300 text-sm">
                     Friendventory
                   </Link>
                 </li>
@@ -77,11 +77,6 @@ export const Footer = () => {
             <div>
               <h3 className="font-bold text-white mb-4">Resources</h3>
               <ul className="space-y-2">
-                <li>
-                  <Link to="/resources" className="text-gray-400 hover:text-purple-300 text-sm">
-                    Therapy Resources
-                  </Link>
-                </li>
                 <li>
                   <Link to="/privacy" className="text-gray-400 hover:text-purple-300 text-sm flex items-center gap-1">
                     <Lock size={14} /> Privacy
