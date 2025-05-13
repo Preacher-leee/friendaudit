@@ -13,8 +13,8 @@ import {
   VolumeX
 } from 'lucide-react';
 
-export const Tools = () => {
-  const tools = [
+export const tool = () => {
+  const tool = [
     {
       id: 'TextAnalyzer',
       name: 'Toxic Text Analyzer',
@@ -85,14 +85,14 @@ export const Tools = () => {
     <div className="min-h-screen pt-24 pb-20 px-4 bg-gradient-to-b from-black via-purple-950/10 to-black">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-4">Friendship Analysis Tools</h1>
+          <h1 className="text-4xl font-bold mb-4">Friendship Analysis tool</h1>
           <p className="text-gray-300">
-            Our suite of specialized tools to help you analyze different aspects of your friendships.
+            Our suite of specialized tool to help you analyze different aspects of your friendships.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {tools.map((tool) => (
+          {tool.map((tool) => (
             <Card 
               key={tool.id}
               className={`transition-all duration-300 hover:shadow-lg hover:shadow-purple-900/20 ${
