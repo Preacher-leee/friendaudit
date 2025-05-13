@@ -5,8 +5,8 @@ import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { Audit } from './pages/Audit';
 import { Tools } from './pages/Tools';
-import { TextAnalyzer } from './Tools/TextAnalyzer';
-import { Compare } from './Tools/Compare';
+import { TextAnalyzer } from './pages/TextAnalyzer';
+import { Compare } from './pages/Compare';
 
 function App() {
   useEffect(() => {
@@ -68,10 +68,10 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Audit" element={<Audit />} />
-          <Route path="/Tools" element={<Tools />} />
-          <Route path="/Tools/TextAnalyzer" element={<TextAnalyzer />} />
-          <Route path="/Tools/Compare" element={<Compare />} />
+          <Route path="/audit" element={<Audit />} />
+          <Route path="/tools" element={<Tools />} />
+          <Route path="/tools/text-analyzer" element={<TextAnalyzer />} />
+          <Route path="/tools/compare" element={<Compare />} />
         </Routes>
         <Footer />
       </div>
