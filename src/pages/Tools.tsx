@@ -37,7 +37,7 @@ export const Tools = () => {
       description: 'Track friendship patterns and energy over time',
       icon: <Book size={24} className="text-pink-400" />,
       isAvailable: true,
-      path: '/Tools/Journal'
+      path: '../components/Journal'
     },
     {
       id: 'Timeline',
@@ -45,7 +45,7 @@ export const Tools = () => {
       description: 'Plot key moments and generate a Trust Decay Chart',
       icon: <Flag size={24} className="text-red-400" />,
       isAvailable: true,
-      path: '/Tools/Timeline'
+      path: '../components/Timeline'
     },
     {
       id: 'Group',
@@ -53,7 +53,7 @@ export const Tools = () => {
       description: 'Map energy flow in your social circle',
       icon: <Users size={24} className="text-green-400" />,
       isAvailable: true,
-      path: '/Tools/Group'
+      path: '../components/Group'
     },
     {
       id: 'Voice',
@@ -61,7 +61,7 @@ export const Tools = () => {
       description: 'Upload audio to detect tone and manipulation',
       icon: <Mic size={24} className="text-yellow-400" />,
       isAvailable: true,
-      path: '/Tools/Voice'
+      path: '../components/Voice'
     },
     {
       id: Importer',
@@ -69,7 +69,7 @@ export const Tools = () => {
       description: 'Import chat logs to find behavioral patterns',
       icon: <UploadCloud size={24} className="text-blue-400" />,
       isAvailable: true,
-      path: '/Tools/Importer'
+      path: '../components/Importer'
     },
     {
       id: 'Ghost',
@@ -77,7 +77,7 @@ export const Tools = () => {
       description: 'Get tailored exit strategies for toxic friendships',
       icon: <VolumeX size={24} className="text-gray-400" />,
       isAvailable: true,
-      path: '/Tools/Ghost'
+      path: '../components/Ghost'
     }
   ];
 
