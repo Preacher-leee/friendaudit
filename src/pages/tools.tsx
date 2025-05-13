@@ -13,71 +13,71 @@ import {
   VolumeX
 } from 'lucide-react';
 
-export const tool = () => {
-  const tool = [
+export const Tools = () => {
+  const tools = [
     {
-      id: 'TextAnalyzer',
+      id: 'text-analyzer',
       name: 'Toxic Text Analyzer',
       description: 'Paste in a message to analyze emotional tone and detect manipulation',
       icon: <MessageCircle size={24} className="text-cyan-400" />,
       isAvailable: true,
-      path: '../components/TextAnalyzer'
+      path: '/tools/text-analyzer'
     },
     {
-      id: 'Compare',
+      id: 'compare',
       name: 'Compare Friends',
       description: 'Side-by-side comparison of two friendships',
       icon: <BarChart2 size={24} className="text-purple-400" />,
       isAvailable: true,
-      path: '../components/Compare'
+      path: '/tools/compare'
     },
     {
-      id: 'Journal',
+      id: 'journal',
       name: 'Friendventory Journal',
       description: 'Track friendship patterns and energy over time',
       icon: <Book size={24} className="text-pink-400" />,
-      isAvailable: true,
-      path: '../components/Journal'
+      isAvailable: false,
+      path: '/tools/journal'
     },
     {
-      id: 'Timeline',
+      id: 'timeline',
       name: 'Red Flag Timeline',
       description: 'Plot key moments and generate a Trust Decay Chart',
       icon: <Flag size={24} className="text-red-400" />,
-      isAvailable: true,
-      path: '../components/Timeline'
+      isAvailable: false,
+      path: '/tools/timeline'
     },
     {
-      id: 'Group',
+      id: 'group',
       name: 'Friend Group Dynamics',
       description: 'Map energy flow in your social circle',
       icon: <Users size={24} className="text-green-400" />,
-      isAvailable: true,
-      path: '../components/Group'
+      isAvailable: false,
+      path: '/tools/group'
     },
     {
-      id: 'Voice',
+      id: 'voice',
       name: 'Voice Message Analyzer',
       description: 'Upload audio to detect tone and manipulation',
       icon: <Mic size={24} className="text-yellow-400" />,
-      isAvailable: true,
-      path: '../components/Voice'
+      isAvailable: false,
+      path: '/tools/voice'
     },
     {
-      id: Importer',
+      id: 'importer',
       name: 'Drama History Importer',
       description: 'Import chat logs to find behavioral patterns',
       icon: <UploadCloud size={24} className="text-blue-400" />,
-      isAvailable: true,
-      path: '../components/Importer'
+      isAvailable: false,
+      path: '/tools/importer'
     },
     {
-      id: 'Ghost',
+      id: 'ghost',
       name: 'Ghost Mode',
       description: 'Get tailored exit strategies for toxic friendships',
       icon: <VolumeX size={24} className="text-gray-400" />,
-      isAvailable: true,
-      path: '../components/Ghost'
+      isAvailable: false,
+      path: '/tools/ghost'
     }
   ];
 
@@ -85,14 +85,14 @@ export const tool = () => {
     <div className="min-h-screen pt-24 pb-20 px-4 bg-gradient-to-b from-black via-purple-950/10 to-black">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-4">Friendship Analysis tool</h1>
+          <h1 className="text-4xl font-bold mb-4">Friendship Analysis Tools</h1>
           <p className="text-gray-300">
-            Our suite of specialized tool to help you analyze different aspects of your friendships.
+            Our suite of specialized tools to help you analyze different aspects of your friendships.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {tool.map((tool) => (
+          {tools.map((tool) => (
             <Card 
               key={tool.id}
               className={`transition-all duration-300 hover:shadow-lg hover:shadow-purple-900/20 ${
@@ -113,7 +113,10 @@ export const tool = () => {
                   <Button as={Link} to={tool.path} variant="outline" fullWidth>
                     Use Tool
                   </Button>
-                ) :
+                ) : (
+                  <Button disabled variant="outline" fullWidth>
+                    Coming Soon
+                  </Button>
                 )}
               </div>
             </Card>
@@ -122,4 +125,4 @@ export const tool = () => {
       </div>
     </div>
   );
-};
+};  
