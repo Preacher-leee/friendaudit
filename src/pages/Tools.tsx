@@ -16,68 +16,68 @@ import {
 export const Tools = () => {
   const tools = [
     {
-      id: 'text-analyzer',
+      id: 'TextAnalyzer',
       name: 'Toxic Text Analyzer',
       description: 'Paste in a message to analyze emotional tone and detect manipulation',
       icon: <MessageCircle size={24} className="text-cyan-400" />,
       isAvailable: true,
-      path: '/tools/text-analyzer'
+      path: '/Tools/TextAnalyzer'
     },
     {
-      id: 'compare',
+      id: 'Compare',
       name: 'Compare Friends',
       description: 'Side-by-side comparison of two friendships',
       icon: <BarChart2 size={24} className="text-purple-400" />,
       isAvailable: true,
-      path: '/tools/compare'
+      path: '/Tools/Compare'
     },
     {
-      id: 'journal',
+      id: 'Journal',
       name: 'Friendventory Journal',
       description: 'Track friendship patterns and energy over time',
       icon: <Book size={24} className="text-pink-400" />,
-      isAvailable: false,
-      path: '/tools/journal'
+      isAvailable: true,
+      path: '/Tools/Journal'
     },
     {
-      id: 'timeline',
+      id: 'Timeline',
       name: 'Red Flag Timeline',
       description: 'Plot key moments and generate a Trust Decay Chart',
       icon: <Flag size={24} className="text-red-400" />,
-      isAvailable: false,
-      path: '/tools/timeline'
+      isAvailable: true,
+      path: '/Tools/Timeline'
     },
     {
-      id: 'group',
+      id: 'Group',
       name: 'Friend Group Dynamics',
       description: 'Map energy flow in your social circle',
       icon: <Users size={24} className="text-green-400" />,
-      isAvailable: false,
-      path: '/tools/group'
+      isAvailable: true,
+      path: '/Tools/Group'
     },
     {
-      id: 'voice',
+      id: 'Voice',
       name: 'Voice Message Analyzer',
       description: 'Upload audio to detect tone and manipulation',
       icon: <Mic size={24} className="text-yellow-400" />,
-      isAvailable: false,
-      path: '/tools/voice'
+      isAvailable: true,
+      path: '/Tools/Voice'
     },
     {
-      id: 'importer',
+      id: Importer',
       name: 'Drama History Importer',
       description: 'Import chat logs to find behavioral patterns',
       icon: <UploadCloud size={24} className="text-blue-400" />,
-      isAvailable: false,
-      path: '/tools/importer'
+      isAvailable: true,
+      path: '/Tools/Importer'
     },
     {
-      id: 'ghost',
+      id: 'Ghost',
       name: 'Ghost Mode',
       description: 'Get tailored exit strategies for toxic friendships',
       icon: <VolumeX size={24} className="text-gray-400" />,
-      isAvailable: false,
-      path: '/tools/ghost'
+      isAvailable: true,
+      path: '/Tools/Ghost'
     }
   ];
 
@@ -113,10 +113,7 @@ export const Tools = () => {
                   <Button as={Link} to={tool.path} variant="outline" fullWidth>
                     Use Tool
                   </Button>
-                ) : (
-                  <Button disabled variant="outline" fullWidth>
-                    Coming Soon
-                  </Button>
+                ) :
                 )}
               </div>
             </Card>
