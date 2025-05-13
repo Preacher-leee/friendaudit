@@ -4,7 +4,7 @@ import { LoadingScreen } from '../components/LoadingScreen';
 import { Button } from '../components/ui/Button';
 import { Flag, MessageCircle, BarChart2 } from 'lucide-react';
 
-export const home = () => {
+export const Home = () => {
   const [loading, setLoading] = useState(true);
   
   useEffect(() => {
@@ -32,11 +32,11 @@ export const home = () => {
             Let's find out if they're a vibe or a parasite.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" as={Link} to="./audit">
+            <Button size="lg" as={Link} to="./Audit">
               Start the Audit
             </Button>
-            <Button variant="outline" size="lg" as={Link} to="./tools">
-              Explore tools
+            <Button variant="outline" size="lg" as={Link} to="./Tools">
+              Explore Tools
             </Button>
           </div>
         </div>
@@ -66,7 +66,7 @@ export const home = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-cyan-300">
-              tools to Audit Your Circle
+              Tools to Audit Your Circle
             </span>
           </h2>
           
@@ -80,7 +80,7 @@ export const home = () => {
               <p className="text-gray-400 mb-6">
                 Answer 20 questions about your friendship and get a detailed analysis of its health and potential toxicity.
               </p>
-              <Button variant="outline" as={Link} to="./audit" fullWidth>
+              <Button variant="outline" as={Link} to="./Audit" fullWidth>
                 Start Quiz
               </Button>
             </div>
@@ -94,7 +94,7 @@ export const home = () => {
               <p className="text-gray-400 mb-6">
                 Paste in messages from your friend and our AI will break down the emotional tone and flag manipulative language.
               </p>
-              <Button variant="outline" as={Link} to="./text-Analyzer" fullWidth>
+              <Button variant="outline" as={Link} to="./TextAnalyzer" fullWidth>
                 Analyze Texts
               </Button>
             </div>
@@ -108,7 +108,7 @@ export const home = () => {
               <p className="text-gray-400 mb-6">
                 Put two friends head-to-head and see who's really showing up for you and who's draining your energy.
               </p>
-              <Button variant="outline" as={Link} to="./compare" fullWidth>
+              <Button variant="outline" as={Link} to="./Compare" fullWidth>
                 Compare Now
               </Button>
             </div>
@@ -125,7 +125,7 @@ export const home = () => {
           <p className="text-xl text-gray-300 mb-10">
             It's time to find out who's worth keeping around and who might be dragging you down.
           </p>
-          <Button size="lg" as={Link} to="./audit">
+          <Button size="lg" as={Link} to="./Audit">
             Start Your First Audit
           </Button>
         </div>
